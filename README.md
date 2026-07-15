@@ -50,7 +50,7 @@ Abaixo, uma representação lógica de como o layout do PDF é estruturado pelo 
 |         3526 0716 9220 3800 0151 9902 5007 2222 9411 1234 4321            |
 +---------------------------------------------------------------------------+
 ---
-
+```
 ## 🛠️ Pré-requisitos e Dependências
 
 Para compilar e executar este gerador de PDF, certifique-se de ter instalado e configurado em seu ambiente Harbour:
