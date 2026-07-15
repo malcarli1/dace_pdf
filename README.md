@@ -62,7 +62,7 @@ Para compilar e executar este gerador de PDF, certifique-se de ter instalado e c
 2. Compilar o Projeto
 Para compilar utilizando o utilitário hbmk2, execute:
 ```
-hbmk2 dace_generator.prg -lhpdf -lhb_zebra
+call c:\minigui\batch\compile.bat Demo_dace_simplificada /L hbhpdf /L hbzebra
 ```
 3. Rodar os Testes
 Chame a função principal passando o arquivo XML de teste fornecido neste repositório:
