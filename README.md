@@ -20,7 +20,7 @@ O sistema realiza o parsing direto do arquivo XML de distribuição da DACE, for
 ## 📊 Estrutura Visual da DACE Resumida (Demo do Layout)
 
 Abaixo, uma representação lógica de como o layout do PDF é estruturado pelo código:
-
+´´´
 +-----------------------------------------------------------------------------------------+
 |                  DACE RESUMIDA - DECLARAÇÃO AUXILIAR DE CONTEÚDO ELETRÔNICA             |
 +-----------------------------------------------------------------------------------------+
@@ -43,7 +43,7 @@ Abaixo, uma representação lógica de como o layout do PDF é estruturado pelo 
 | CHAVE DE ACESSO DC-e                                                                    |
 | 3526 0712 3456 7890 1234 5678 9012 3456 7890 1234 5678                                  |
 +-----------------------------------------------------------------------------------------+
-
+´´´´
 ---
 
 ## 🛠️ Pré-requisitos e Dependências
@@ -54,11 +54,4 @@ Para compilar e executar este gerador de PDF, certifique-se de ter instalado e c
 2. **Biblioteca LibHaru (hpdf)** (Geração de PDFs nativos)
 3. **Biblioteca hb_zebra** (Para renderização de códigos de barras e QR Codes)
 
----
 
-## 🚀 Como Executar
-
-### 1. Clonar o Repositório
-```bash
-git clone [https://github.com/SEU-USUARIO/nome-do-repositorio.git](https://github.com/SEU-USUARIO/nome-do-repositorio.git)
-cd nome-do-repositorio
