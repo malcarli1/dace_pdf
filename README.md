@@ -20,30 +20,35 @@ O sistema realiza o parsing direto do arquivo XML de distribuição da DACE, for
 ## 📊 Estrutura Visual da DACE Resumida (Demo do Layout)
 
 Abaixo, uma representação lógica de como o layout do PDF é estruturado pelo código:
-´´´
-+-----------------------------------------------------------------------------------------+
-|                  DACE RESUMIDA - DECLARAÇÃO AUXILIAR DE CONTEÚDO ELETRÔNICA             |
-+-----------------------------------------------------------------------------------------+
-| Nº 000.123.456   SÉRIE 001                                                              |
-| DATA DE EMISSÃO: 15-07-2026 10:00:00                                                    |
-| PROTOCOLO DE AUTORIZAÇÃO: 135260001234567                                               |
-| MODALIDADE DO TRANSPORTE: 0-CORREIOS                                                    |
-+-----------------------------------------------------------------------------------------+
-| CNPJ/CPF REMETENTE: 123.******-01                                                       |
-| NOME REMETENTE: REMETENTE DEMO DA SILVA                                                 |
-| ENDEREÇO: Avenida Paulista, 1000 - Bela Vista - CEP: 01310100                           |
-+-----------------------------------------------------------------------------------------+
-| CNPJ/CPF DESTINATÁRIO: 98.765.432/0001-99                                               |
-| NOME DESTINATÁRIO: DESTINATÁRIO EXEMPLO LTDA                                            |
-| ENDEREÇO: Rua Copacabana, 500 Bloco B - Copacabana - CEP: 22020002                      |
-+-----------------------------------------------------------------------------------------+
-| [ QR CODE ]   | Obs 1: Declaramos que este pacote contem apenas itens de uso pessoal...  |
-|               | Obs 2: Mercadoria enviada sob termos de servico padrão...                |
-+-----------------------------------------------------------------------------------------+
-| CHAVE DE ACESSO DC-e                                                                    |
-| 3526 0712 3456 7890 1234 5678 9012 3456 7890 1234 5678                                  |
-+-----------------------------------------------------------------------------------------+
-´´´´
+```text
++---------------------------------------------------------------------------+
+|         DACE RESUMIDA - DECLARAÇÃO AUXILIAR DE CONTEÚDO ELETRÔNICA        |
++---------------------------------------------------------------------------+
+|  Nº 007.222.294   SÉRIE: 025                                              |
+|  DATA DE EMISSÃO: 2026-07-13T12:47:35-03:00                               |
+|  PROTOCOLO DE AUTORIZAÇÃO: 3352600058738349                               |
+|  MODALIDADE DO TRANSPORTE: 0-CORREIOS                                     |
++---------------------------------------------------------------------------+
+|  CNPJ/CPF REMETENTE: 054.******-79                                        |
+|  NOME REMETENTE: marcelo antonio lazzaro carli                            |
+|  CIDADE-UF: Marília-SP                                                    |
+|  ENDEREÇO: Rua Andre Martins Parra, 250 - Jardim Colibri - CEP: 17514-260  |
++---------------------------------------------------------------------------+
+|  CNPJ/CPF DESTINATÁRIO: 137.******-88                                     |
+|  NOME DESTINATÁRIO: flavia evencio                                        |
+|  CIDADE-UF: Morello - ES                                                  |
+|  ENDEREÇO: Morello, 0 sn - zona rural - CEP: 29723-000                    |
++---------------------------------------------------------------------------+
+|  CNPJ FISCO/MARKETPLACE: 16.922.038/0001-51                               |
+|  NOME: Enjoei S.A.                                                        |
++-----------------+---------------------------------------------------------+
+|                 | É contribuinte de ICMS qualquer pessoa física...        |
+|   [ QR CODE ]   |                                                         |
+|                 | Constitui crime contra a ordem tributária...            |
++-----------------+---------------------------------------------------------+
+|                          Chave de Acesso DC-e                             |
+|         3526 0716 9220 3800 0151 9902 5007 2222 9411 0632 7420            |
++---------------------------------------------------------------------------+
 ---
 
 ## 🛠️ Pré-requisitos e Dependências
