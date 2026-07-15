@@ -61,31 +61,31 @@ Para compilar e executar este gerador de PDF, certifique-se de ter instalado e c
 
 2. Compilar o Projeto
 Para compilar utilizando o utilitário hbmk2, execute:
-´´´
+```
 hbmk2 dace_generator.prg -lhpdf -lhb_zebra
-´´´´
+```
 3. Rodar os Testes
 Chame a função principal passando o arquivo XML de teste fornecido neste repositório:
 Snippet de código
-´´´´
+```
 DCe("teste_dace.xml")
-´´´´
+```
 
 💡 Destaques de Código e Soluções Engenhosas
 Conversão Milimétrica para PDF (MM_X e MM_Y)
 A LibHaru utiliza pontos tipográficos (points) baseados em polegadas como unidade padrão. Para facilitar o desenho técnico, criamos uma camada matemática estática que traduz milímetros de uma régua comum direto para as coordenadas exatas da folha A4:
 
-´´´
+```
 Snippet de código
 Static Function MM_X( nCol )
 Return nCol * 2.834645669
 
 Static Function MM_Y( nRow, nHeight )
 Return nHeight - ( nRow * 2.834645669 )
-´´´
+```
 Máscaras inline seguras com iif
 O parser extrai a tag do XML e escolhe em tempo de execução a formatação ideal para proteger as informações sensíveis:
-´´´
+```
 Snippet de código
 DrawText( hPdf, hPage, 055, 105, "CNPJ/CPF DESTINATÁRIO: " + ;
 iif( !Empty( XmlNode( XmlNode(cXml, [dest]), [CPF] ) ), ;
@@ -93,7 +93,7 @@ Left( XmlNode( XmlNode(cXml, [dest]), [CPF] ), 3 ) + ".******-" + Right( XmlNode
 iif( !Empty( XmlNode( XmlNode(cXml, [dest]), [CNPJ] ) ), ;
 Transf( XmlNode( XmlNode(cXml, [dest]), [CNPJ] ), "@R 99.999.999/9999-99" ), "" ) ), ;
 "Helvetica", 7.5, .T., .F., nHeight )
-´´´
+```
 📄 Licença
 Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
 
